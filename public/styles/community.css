@@ -1,0 +1,124 @@
+html, body {
+    height: 100%; /* html과 body의 높이를 100%로 설정 */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    display: flex; /* 플렉스 박스 사용 */
+    flex-direction: column; /* 세로 방향으로 정렬 */
+    background: #4CAF50; /* 전체 배경색을 헤더 색상으로 설정 */
+}
+
+header {
+    background: #4CAF50; /* 헤더 색상 */
+    color: white; /* 글자색 */
+    padding: 10px 0;
+    text-align: center;
+}
+
+.user-info {
+    position: absolute;
+    top: 20px; /* 위치 조정 */
+    right: 20px; /* 위치 조정 */
+    font-size: 16px; /* 글자 크기 */
+}
+
+.animation-container {
+    position: absolute;
+    top: 10px; /* 페이지 왼쪽 위로 이동 */
+    left: 100px; /* 페이지 왼쪽 위로 이동 */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.cta-button {
+    background: #4CAF50; /* 버튼 색상 유지 */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+main {
+    flex: 1; /* 남은 공간을 차지 */
+    padding: 20px; /* 메인 영역 패딩 */
+    width: 70%; /* 메인 영역 너비를 70%로 설정 */
+    margin: 0 auto; /* 중앙 정렬 */
+    background-color: white; /* 메인 영역 배경색을 흰색으로 설정 */
+    border-radius: 10px; /* 테두리 둥글게 설정 */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* 약간의 그림자 추가 (선택 사항) */
+}
+
+.posts {
+    padding: 5px;
+}
+
+.posts h2 {
+    text-align: center;
+}
+
+.post {
+    background: #f9f9f9;
+    margin: 10px auto;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    max-width: 600px; /* 최대 너비 */
+}
+
+.post h3 {
+    margin: 0 0 10px;
+}
+
+.post a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+#pagination {
+    margin: 20px 0; /* 위아래 여백 설정 */
+    text-align: center; /* 중앙 정렬 */
+}
+
+#pagination button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff; /* 버튼 색상 */
+    color: white;
+    cursor: pointer;
+    margin: 0 5px; /* 버튼 간격 */
+}
+
+#pagination button:disabled {
+    background-color: #ddd; /* 비활성화된 버튼 색상 */
+    cursor: not-allowed;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #4CAF50; /* 푸터 색상 */
+    color: white; /* 글자색 */
+    width: 100%;
+    position: relative; /* relative로 설정하여 페이지 하단에 위치 */
+    margin-top: auto; /* 메인 콘텐츠 이후에 자동으로 위치 */
+}
+
+
